@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailHeader" customModule="HomeAndDetailView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="74"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6u-gr-iOB">
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiking Event - Expert Experience..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FFl-3c-Xfv">
+                                <rect key="frame" x="46" y="27" width="263.33333333333326" height="20.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bookmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mEG-NQ-QFs">
+                                <rect key="frame" x="318" y="28.333333333333329" width="17.333333333333314" height="20"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Db7-K3-RpE">
+                                <rect key="frame" x="16" y="28.999999999999996" width="13" height="14.666666666666661"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Db7-K3-RpE" firstAttribute="leading" secondItem="C6u-gr-iOB" secondAttribute="leading" constant="16" id="C0N-BF-gWD"/>
+                            <constraint firstItem="Db7-K3-RpE" firstAttribute="top" secondItem="C6u-gr-iOB" secondAttribute="top" constant="26" id="qLL-sL-8ac"/>
+                            <constraint firstItem="mEG-NQ-QFs" firstAttribute="leading" secondItem="FFl-3c-Xfv" secondAttribute="trailing" constant="8.6699999999999999" id="w4t-xi-HId"/>
+                            <constraint firstItem="FFl-3c-Xfv" firstAttribute="leading" secondItem="Db7-K3-RpE" secondAttribute="trailing" constant="17" id="yav-ev-tyg"/>
+                            <constraint firstItem="mEG-NQ-QFs" firstAttribute="top" secondItem="C6u-gr-iOB" secondAttribute="top" constant="28" id="ydj-yS-yh3"/>
+                            <constraint firstAttribute="trailing" secondItem="mEG-NQ-QFs" secondAttribute="trailing" constant="8.6699999999999999" id="zQz-yx-eb2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C6u-gr-iOB" secondAttribute="trailing" id="SpJ-N3-12E"/>
+                <constraint firstAttribute="bottom" secondItem="C6u-gr-iOB" secondAttribute="bottom" id="kGg-cD-xJS"/>
+                <constraint firstItem="C6u-gr-iOB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="s2P-GW-cau"/>
+                <constraint firstItem="C6u-gr-iOB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v2y-e8-wN2"/>
+            </constraints>
+            <size key="customSize" width="344" height="74"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="-3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="335.87786259541986" y="28.87323943661972"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

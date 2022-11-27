@@ -15,36 +15,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kyf-Mr-fHJ">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uE6-En-uz0">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Kyf-Mr-fHJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MIz-CX-jBM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kyf-Mr-fHJ" secondAttribute="trailing" id="e2U-ps-tmh"/>
-                            <constraint firstItem="Kyf-Mr-fHJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ktO-RD-gBE"/>
-                            <constraint firstItem="Kyf-Mr-fHJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ywO-6H-jLA"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="homekit" id="aVx-5c-SQi"/>
-                    <connections>
-                        <outlet property="collectionView" destination="Kyf-Mr-fHJ" id="nQ4-Zx-E8R"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="dLP-rJ-a1P">
+            <objects>
+                <viewController id="cAj-te-f17" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ygc-Tm-M9d">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="w1u-pL-Pxv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Detail" image="rectangle.portrait.and.arrow.forward" catalog="system" selectedImage="rectangle.portrait.and.arrow.right.fill" id="7xr-uJ-dfB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3UP-gz-ViH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711" y="4"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="12x-dK-ap4">
@@ -52,32 +46,23 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1sS-QH-0he" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bLY-nD-4ax">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="J18-eS-eVf"/>
-                        <segue destination="W1Q-rm-mH9" kind="relationship" relationship="viewControllers" id="eRe-sv-TvU"/>
+                        <segue destination="cAj-te-f17" kind="relationship" relationship="viewControllers" id="eRe-sv-TvU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d78-Kp-gQn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--Detailed-->
-        <scene sceneID="Wvx-gR-v2d">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Detailed" id="W1Q-rm-mH9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="xQp-2k-fD9"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WIY-O5-emC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1711" y="4"/>
-        </scene>
     </scenes>
     <resources>
         <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="rectangle.portrait.and.arrow.forward" catalog="system" width="128" height="109"/>
+        <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

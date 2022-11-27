@@ -1,8 +1,8 @@
 import UIKit
 
-class ViewController: UIViewController {
+class DetailedViewController: UIViewController {
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
-    
+
     @IBOutlet weak var collectionView: UICollectionView!
     
     lazy var collectionViewLayout: UICollectionViewLayout = {
@@ -13,12 +13,12 @@ class ViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[sectionIndex].type
             
             switch sectionType {
-                case .header:
-                    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(40))
+                case .detailHeader:
+                    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100))
                     
                     let item = NSCollectionLayoutItem(layoutSize: itemSize)
                 
-                    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+                    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100))
                 
                     let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
                     
@@ -34,23 +34,25 @@ class ViewController: UIViewController {
         return layout
     }()
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initialize()
-        
+        initializeDV()
+
     }
     
-    private func initialize() {
-        setupCollectionView()
+    private func initializeDV() {
+        setupDetailView()
         configureDataSource()
     }
     
-    private func setupCollectionView() {
-        collectionView.register(HomeHeader.nib, forCellWithReuseIdentifier: HomeHeader.reuseIdentifier)
+    private func setupDetailView() {
+        collectionView.register(DetailHeader.nib, forCellWithReuseIdentifier: DetailHeader.reuseIdentifier)
         
         collectionView.collectionViewLayout = collectionViewLayout
-        
+       
     }
     
     private func configureDataSource() {
@@ -62,26 +64,22 @@ class ViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[indexPath.section].type
             
             switch sectionType {
-            case .header:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeHeader.reuseIdentifier, for: indexPath)
+            case .detailHeader:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailHeader.reuseIdentifier, for: indexPath)
                 return cell
             default:
                 return nil
             }
         }
-            
-            let sections = [
-                Section(type: .header, items: [
-                    Item()])
-            ]
-            
-            var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
-            snapshot.appendSections(sections)
-            sections.forEach { snapshot.appendItems($0.items, toSection: $0) }
-            dataSource.apply(snapshot, animatingDifferences: false )
-        }
+        
+        let sections = [
+            Section(type: .detailHeader, items: [
+                Item()])
+        ]
+        
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+        snapshot.appendSections(sections)
+        sections.forEach { snapshot.appendItems($0.items, toSection: $0) }
+        dataSource.apply(snapshot, animatingDifferences: false )
     }
-
-
-
-
+}

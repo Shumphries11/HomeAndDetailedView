@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  HomeAndDetailView
-//
-//  Created by Santita Humphries on 11/24/22.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

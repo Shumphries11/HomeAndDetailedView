@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  HomeAndDetailView
-//
-//  Created by Santita Humphries on 11/24/22.
-//
-
 import UIKit
 
 @main
