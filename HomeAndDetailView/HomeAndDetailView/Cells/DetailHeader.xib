@@ -56,11 +56,6 @@
                 <constraint firstItem="C6u-gr-iOB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v2y-e8-wN2"/>
             </constraints>
             <size key="customSize" width="344" height="74"/>
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                    <real key="value" value="-3"/>
-                </userDefinedRuntimeAttribute>
-            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="335.87786259541986" y="28.87323943661972"/>
         </collectionViewCell>
     </objects>

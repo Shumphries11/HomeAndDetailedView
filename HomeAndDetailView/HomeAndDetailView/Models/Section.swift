@@ -20,13 +20,15 @@ struct Section: Hashable {
     enum EventSectionType: String {
         case header
         case search
-        case featured
+        case featured1
+        case featured2
         case featuredHeader
         case recommended
         case recommendedHeader
         case latest
         case latestHeader
         case detailHeader
+        case hikingImage
         case hikingEvent
         case hikingEventHeader
         case recommendations
@@ -51,13 +53,15 @@ struct Section: Hashable {
         
         static let header = SectionType(rawValue: Section.EventSectionType.header.rawValue)
         static let search = SectionType(rawValue: Section.EventSectionType.search.rawValue)
-        static let featured = SectionType(rawValue: Section.EventSectionType.featured.rawValue)
+        static let featured1 = SectionType(rawValue: Section.EventSectionType.featured1.rawValue)
+        static let featured2 = SectionType(rawValue: Section.EventSectionType.featured2.rawValue)
         static let featuredHeader = SectionType(rawValue: Section.EventSectionType.featuredHeader.rawValue)
         static let recommended = SectionType(rawValue: Section.EventSectionType.recommended.rawValue)
         static let recommendedHeader = SectionType(rawValue: Section.EventSectionType.recommendedHeader.rawValue)
         static let latest = SectionType(rawValue: Section.EventSectionType.latest.rawValue)
         static let latestHeader = SectionType(rawValue: Section.EventSectionType.latestHeader.rawValue)
         static let detailHeader = SectionType(rawValue: Section.EventSectionType.detailHeader.rawValue)
+        static let hikingImage = SectionType(rawValue: Section.EventSectionType.hikingImage.rawValue)
         static let hikingEvent = SectionType(rawValue: Section.EventSectionType.hikingEvent.rawValue)
         static let hikingEventHeader = SectionType(rawValue: Section.EventSectionType.hikingEventHeader.rawValue)
         static let recommendations = SectionType(rawValue: Section.EventSectionType.recommendations.rawValue)
