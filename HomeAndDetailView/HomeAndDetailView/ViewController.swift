@@ -58,18 +58,18 @@ class ViewController: UIViewController {
                 return section
                 
             case .featured1:
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.35), heightDimension: .absolute(245))
+                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(235))
                 
                 let item = NSCollectionLayoutItem(layoutSize: itemSize)
             
-                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(260))
+                let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(183), heightDimension: .absolute(235))
             
                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
                 
-                group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 5)
+                group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 24)
                 
                 let section = NSCollectionLayoutSection(group: group)
-                section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 15, trailing: 0)
+                section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 24, bottom: 8, trailing: 0)
                 section.orthogonalScrollingBehavior = .groupPaging
 
                 return section
@@ -142,7 +142,7 @@ class ViewController: UIViewController {
                 Section(type: .featuredHeader, items: [
                     Item()]),
                 Section(type: .featured1, items: [
-                    Item()])
+                    Item(), Item(), Item()])
             ]
             
             var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoriesHeaderCell" customModule="HomeAndDetailView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="83"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="306" height="83"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-Hi-37P">
+                        <rect key="frame" x="0.0" y="0.0" width="306" height="83"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DM-Gw-efb">
+                                <rect key="frame" x="0.0" y="34" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3K-js-QOs">
+                                <rect key="frame" x="287" y="34" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D3K-js-QOs" firstAttribute="baseline" secondItem="5DM-Gw-efb" secondAttribute="baseline" id="cw6-Sm-Xsr"/>
+                            <constraint firstItem="D3K-js-QOs" firstAttribute="leading" secondItem="5DM-Gw-efb" secondAttribute="trailing" constant="200" id="hNV-gU-fYf"/>
+                            <constraint firstItem="5DM-Gw-efb" firstAttribute="top" secondItem="qfS-Hi-37P" secondAttribute="top" constant="34" id="iIV-Gk-dFP"/>
+                            <constraint firstItem="5DM-Gw-efb" firstAttribute="leading" secondItem="qfS-Hi-37P" secondAttribute="leading" id="m0a-1v-P43"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qfS-Hi-37P" secondAttribute="bottom" id="HPg-p2-zzS"/>
+                <constraint firstItem="qfS-Hi-37P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JoS-nb-FMn"/>
+                <constraint firstAttribute="trailing" secondItem="qfS-Hi-37P" secondAttribute="trailing" id="RkB-QL-liI"/>
+                <constraint firstItem="qfS-Hi-37P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bG1-tP-tHC"/>
+            </constraints>
+            <size key="customSize" width="306" height="83"/>
+            <connections>
+                <outlet property="categoriesHeader" destination="qfS-Hi-37P" id="yfn-Yl-gBl"/>
+            </connections>
+            <point key="canvasLocation" x="334.35114503816794" y="31.338028169014088"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
