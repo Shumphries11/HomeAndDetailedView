@@ -27,6 +27,8 @@ struct Section: Hashable {
         case recommendedHeader
         case latest
         case latestHeader
+        case categoriesHeader
+        case categories
         case detailHeader
         case hikingImage
         case hikingEvent
@@ -60,6 +62,8 @@ struct Section: Hashable {
         static let recommendedHeader = SectionType(rawValue: Section.EventSectionType.recommendedHeader.rawValue)
         static let latest = SectionType(rawValue: Section.EventSectionType.latest.rawValue)
         static let latestHeader = SectionType(rawValue: Section.EventSectionType.latestHeader.rawValue)
+        static let categories = SectionType(rawValue: Section.EventSectionType.categories.rawValue)
+        static let categoriesHeader = SectionType(rawValue: Section.EventSectionType.categoriesHeader.rawValue)
         static let detailHeader = SectionType(rawValue: Section.EventSectionType.detailHeader.rawValue)
         static let hikingImage = SectionType(rawValue: Section.EventSectionType.hikingImage.rawValue)
         static let hikingEvent = SectionType(rawValue: Section.EventSectionType.hikingEvent.rawValue)

@@ -1,21 +1,99 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LatestCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LatestCell" customModule="HomeAndDetailView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="321" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latest1" translatesAutoresizingMaskIntoConstraints="NO" id="jKK-cd-GY6">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="lkl-xP-wQo"/>
+                            <constraint firstAttribute="width" constant="90" id="ugc-10-O2A"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKE-eu-TgY">
+                        <rect key="frame" x="90" y="0.0" width="231" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sushi Lovers'  get-together San Julian" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-ZN-VSH">
+                                <rect key="frame" x="24" y="0.0" width="207" height="31.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/10/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Had-qV-fh8">
+                                <rect key="frame" x="24" y="49.333333333333336" width="84" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manhatten, NY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wy7-FN-BRC">
+                                <rect key="frame" x="24" y="71.666666666666671" width="84" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plus.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tfr-V7-bBa">
+                                <rect key="frame" x="207" y="71.333333333333343" width="24" height="17.333333333333343"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m4q-ZN-VSH" secondAttribute="trailing" id="4Km-S0-3qw"/>
+                            <constraint firstItem="m4q-ZN-VSH" firstAttribute="top" secondItem="wKE-eu-TgY" secondAttribute="top" id="6eF-Hc-ITD"/>
+                            <constraint firstAttribute="trailing" secondItem="tfr-V7-bBa" secondAttribute="trailing" id="7ov-Tf-g8h"/>
+                            <constraint firstItem="tfr-V7-bBa" firstAttribute="leading" secondItem="Had-qV-fh8" secondAttribute="trailing" constant="99" id="Bum-qr-RPM"/>
+                            <constraint firstAttribute="width" constant="231" id="D3A-Ok-4Wi"/>
+                            <constraint firstItem="Had-qV-fh8" firstAttribute="top" secondItem="m4q-ZN-VSH" secondAttribute="bottom" constant="18" id="Mok-gj-3YV"/>
+                            <constraint firstAttribute="bottom" secondItem="tfr-V7-bBa" secondAttribute="bottom" id="OOw-tw-J7y"/>
+                            <constraint firstItem="Had-qV-fh8" firstAttribute="leading" secondItem="wKE-eu-TgY" secondAttribute="leading" constant="24" id="PCc-bk-a69"/>
+                            <constraint firstItem="m4q-ZN-VSH" firstAttribute="leading" secondItem="wKE-eu-TgY" secondAttribute="leading" constant="24" id="Uv2-an-7Wg"/>
+                            <constraint firstAttribute="height" constant="90" id="rc1-lZ-ENt"/>
+                            <constraint firstItem="Wy7-FN-BRC" firstAttribute="top" secondItem="Had-qV-fh8" secondAttribute="bottom" constant="8" id="ryG-Ry-0NM"/>
+                            <constraint firstItem="Wy7-FN-BRC" firstAttribute="leading" secondItem="wKE-eu-TgY" secondAttribute="leading" constant="24" id="u1x-uK-IBX"/>
+                            <constraint firstItem="tfr-V7-bBa" firstAttribute="leading" secondItem="Wy7-FN-BRC" secondAttribute="trailing" constant="99" id="ztq-sx-0b5"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="wKE-eu-TgY" firstAttribute="leading" secondItem="jKK-cd-GY6" secondAttribute="trailing" id="Ldz-Nn-9Gd"/>
+                <constraint firstAttribute="bottom" secondItem="jKK-cd-GY6" secondAttribute="bottom" id="N1F-Eu-1wa"/>
+                <constraint firstItem="wKE-eu-TgY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O2a-WB-CyC"/>
+                <constraint firstItem="jKK-cd-GY6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UmJ-zq-5lp"/>
+                <constraint firstItem="jKK-cd-GY6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eZb-38-hfT"/>
+                <constraint firstAttribute="bottom" secondItem="wKE-eu-TgY" secondAttribute="bottom" id="jxc-bX-EbV"/>
+                <constraint firstAttribute="trailing" secondItem="wKE-eu-TgY" secondAttribute="trailing" id="r3g-RS-X2H"/>
+            </constraints>
+            <size key="customSize" width="321" height="90"/>
+            <connections>
+                <outlet property="latestCell1" destination="wKE-eu-TgY" id="stc-p5-GCY"/>
+            </connections>
+            <point key="canvasLocation" x="156.4885496183206" y="26.056338028169016"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="latest1" width="90" height="90"/>
+        <image name="plus.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

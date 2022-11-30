@@ -1,17 +1,14 @@
-//
-//  RecommendedCell.swift
-//  HomeAndDetailView
-//
-//  Created by Santita Humphries on 11/27/22.
-//
-
 import UIKit
 
 class RecommendedCell: UICollectionViewCell {
+    
+    static let reuseIdentifier = String(describing: RecommendedCell.self)
+    static let nib = UINib(nibName: String(describing: RecommendedCell.self), bundle: nil)
 
+    @IBOutlet weak var recommendedCell: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
 }
